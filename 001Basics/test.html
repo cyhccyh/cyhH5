@@ -13,21 +13,31 @@
             height: 100%;
         }
         @keyframes myfirst {
-            from {
-                opacity:0}
-            to {opacity:100}
+           0% {opacity: 0}
+            25%{opacity:100}
+            50%{opacity: 0}
+            100%{opacity: 0}
         }
-        h1,p{
-            animation: myfirst 1s infinite;
+        @keyframes mysecond {
+            0% {opacity: 0}
+            50%{opacity:0}
+            75%{opacity: 100}
+            100%{opacity: 0}
         }
+        p {
+            font-size: 200px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }#chuang{
+            animation: myfirst 6s infinite;
+        }#yi{ animation: mysecond 6s infinite;}
         </style>
 </head>
-    <audio src="LLL.wav" control="control" autoplay="autoplay"></audio>
+    <audio src="mp3/LLL.wav"  autoplay="autoplay" ></audio>
 <body>
 <h1>静夜思</h1>
-<p>床前明月光,</p>
-<p>疑是地上霜.</p>
-<p>举头望明月</p>
-<p>低头思故乡</p>
+<p id="chuang">床前明月光,</p>
+<p id="yi">疑是地上霜.</p>
 </body>
 </html>
